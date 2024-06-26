@@ -13,6 +13,9 @@ class Solution {
         if(nums2.length%2==0){
             tr=0;
         }
+        if(nums1.length%2==0){
+            total=0;
+        }
         int ans=0;
         for(int i=0;i<nums1.length;i++){
             ans=ans^total;
