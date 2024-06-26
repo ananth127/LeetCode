@@ -17,9 +17,12 @@ class Solution {
             total=0;
         }
         int ans=0;
+        if(nums2.length%2==0 && nums1.length%2==0)
+        return 0;
         for(int i=0;i<nums1.length;i++){
             ans=ans^total;
         }
+
         return ans^tr;
     }
 }
