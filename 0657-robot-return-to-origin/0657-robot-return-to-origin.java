@@ -8,13 +8,13 @@ class Solution {
             if(s.charAt(i)=='U'){
                 ud++;
             }
-            else if(s.charAt(i)=='D' && nud=='U'){
+            else if(s.charAt(i)=='D' ){
                 ud--;
             }
             else if(s.charAt(i)=='L' ){
                 lr++;
             }
-            else if(s.charAt(i)=='R' && nlr=='L'){
+            else if(s.charAt(i)=='R' ){
                 lr--;
             }
 
