@@ -12,7 +12,7 @@ class Solution {
             else if(s.charAt(i)=='D' && nud=='U'){
                 ud--;
             }
-            if(s.charAt(i)=='L' && (nlr=='L')){
+            else if(s.charAt(i)=='L' && (nlr=='L')){
                 lr++;
                 nlr='L';
             }
