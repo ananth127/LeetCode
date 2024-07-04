@@ -1,8 +1,6 @@
 class Solution {
     public boolean judgeCircle(String s) {
         int ud=0;
-        char nud='U';
-        char nlr='L';
         int lr=0;
         for(int i=0;i<s.length();i++){
             if(s.charAt(i)=='U'){
