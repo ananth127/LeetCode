@@ -13,7 +13,7 @@ class Solution {
                 ans=((n%8)*(i+1));
                 while(i>0){
                     sum+=i*8;
-                    System.out.println(sum);
+                    //System.out.println(sum);
                     i--;
                 }
                  
