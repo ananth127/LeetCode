@@ -4,7 +4,7 @@ class Solution {
         int sum=0;
         int i=1;
         int ans=0;
-        System.out.println(n);
+      //  System.out.println(n);
         if(n<=8){
             return n;
         }
@@ -13,7 +13,6 @@ class Solution {
                 ans=((n%8)*(i+1));
                 while(i>0){
                     sum+=i*8;
-                    //System.out.println(sum);
                     i--;
                 }
                  
