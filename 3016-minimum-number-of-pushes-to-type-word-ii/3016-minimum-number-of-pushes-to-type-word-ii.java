@@ -7,8 +7,6 @@ class Solution {
         for(char ch: word.toCharArray()){
             ct[ch-'a']++;
         }
-        
-		// sort the array in descending order
         ct = Arrays.stream(ct).boxed()
             .sorted(Collections.reverseOrder())
             .mapToInt(Integer::intValue)
