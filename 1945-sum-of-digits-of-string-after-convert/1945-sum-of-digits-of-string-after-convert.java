@@ -1,22 +1,22 @@
 class Solution {
-    public int getLucky(String s, int k) {
-        String a="";
-       for(int i=0;i<s.length();i++){
-            a+=((s.charAt(i)+0)-96)+"";
-       }
-       int b=a.length()-1;
-       int sum=0;
-       while(k>0 && b>=0){
-            sum+=(Integer.parseInt(a.charAt(b)+""));
-            b--;
-            if(b==-1 && k!=1){
-                a=Integer.toString(sum);
-                b=a.length()-1;
-                sum=0;
-                k--;
-            }
-       }
-       return sum;
 
+    public int getLucky(String s, int k) {
+        // Convert each character to its numerical value and build a string
+        String numericString = "";
+        for (char ch : s.toCharArray()) {
+            numericString += Integer.toString(ch - 'a' + 1);
+        }
+
+        // Apply digit sum transformations k times
+        while (k-- > 0) {
+            int digitSum = 0;
+            for (char digit : numericString.toCharArray()) {
+                digitSum += digit - '0';
+            }
+            numericString = Integer.toString(digitSum);
+        }
+
+        // Convert the final string to integer and return
+        return Integer.parseInt(numericString);
     }
 }
